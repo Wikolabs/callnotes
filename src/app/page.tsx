@@ -6,13 +6,14 @@ export default function Home() {
         <span style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", color: "#a21caf" }}>
           CallNotes
         </span>
-        <a
-          href="mailto:hello@wikolabs.com?subject=CallNotes — Demande de démo"
-          className="px-4 py-2 rounded-lg text-white text-sm font-semibold"
-          style={{ background: "#a21caf" }}
-        >
-          Essayer CallNotes
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-white text-sm font-semibold" style={{ background: "#a21caf" }}>
+            📅 Réserver un créneau →
+          </a>
+          <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20CallNotes%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-white text-sm font-semibold" style={{ background: "#25d366", borderColor: "#25d366" }}>
+            💬 WhatsApp →
+          </a>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -26,13 +27,14 @@ export default function Home() {
         <p className="text-lg max-w-2xl mx-auto mb-8" style={{ color: "#7e22ce" }}>
           CallNotes transcrit vos appels, en extrait les informations BANT, génère un résumé structuré et synchronise tout dans votre CRM — sans lever le petit doigt.
         </p>
-        <a
-          href="mailto:hello@wikolabs.com?subject=CallNotes — Demande de démo"
-          className="inline-block px-8 py-4 rounded-xl text-white font-bold text-lg shadow-lg"
-          style={{ background: "linear-gradient(135deg, #a21caf, #7c3aed)" }}
-        >
-          Voir la démo →
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl text-white font-bold text-lg shadow-lg" style={{ background: "linear-gradient(135deg, #a21caf, #7c3aed)" }}>
+            📅 Réserver un créneau →
+          </a>
+          <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20CallNotes%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl text-white font-bold text-lg shadow-lg" style={{ background: "#25d366", borderColor: "#25d366" }}>
+            💬 WhatsApp →
+          </a>
+        </div>
       </section>
 
       {/* Before / After */}
@@ -110,30 +112,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="max-w-2xl mx-auto px-6 py-16 text-center">
-        <div className="rounded-2xl p-8 bg-white border border-fuchsia-100 shadow-sm">
-          <div style={{ fontFamily: "var(--font-display)", fontSize: "3rem", color: "#a21caf", lineHeight: 1 }} className="mb-3">&ldquo;</div>
-          <p className="text-lg leading-relaxed mb-4 text-slate-700">
-            Je perdais 45 minutes par appel à remplir mon CRM. Avec CallNotes, c'est fait avant la fin du call. J'ai gagné 3 heures par jour — et mes managers adorent les rapports automatiques.
-          </p>
-          <div className="font-semibold" style={{ color: "#a21caf" }}>Thomas V. — Account Executive, Scale-up SaaS</div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 text-center" style={{ background: "linear-gradient(135deg, #a21caf, #7c3aed)" }}>
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "2rem", color: "white" }} className="mb-3">
           45 min par appel. Récupérées. Chaque jour.
         </h2>
         <p className="text-fuchsia-200 mb-8">Démo en 20 min. Opérationnel en 24h.</p>
-        <a
-          href="mailto:hello@wikolabs.com?subject=CallNotes — Demande de démo"
-          className="inline-block px-8 py-4 rounded-xl font-bold text-lg shadow-lg"
-          style={{ background: "white", color: "#a21caf" }}
-        >
-          Récupérer mon temps
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl font-bold text-lg shadow-lg" style={{ background: "white", color: "#a21caf" }}>
+            📅 Réserver un créneau →
+          </a>
+          <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20CallNotes%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl font-bold text-lg shadow-lg" style={{ background: "#25d366", borderColor: "#25d366" }}>
+            💬 WhatsApp →
+          </a>
+        </div>
       </section>
 
       <footer className="text-center py-6 text-sm text-fuchsia-700 bg-white border-t border-fuchsia-50">
