@@ -129,7 +129,14 @@ export default function Home() {
       </section>
 
       <footer className="text-center py-6 text-sm text-fuchsia-700 bg-white border-t border-fuchsia-50">
-        &copy; 2025 CallNotes — Un produit Wikolabs
+        <p>&copy; 2025 CallNotes — Un produit Wikolabs</p>
+        <div className="flex flex-wrap justify-center gap-4 mt-2 text-xs text-fuchsia-500">
+          <a href="mailto:team@wikolabs.com" className="hover:text-fuchsia-900 transition-colors">team@wikolabs.com</a>
+          <span>·</span>
+          <a href="tel:+261386626100" className="hover:text-fuchsia-900 transition-colors">+261 38 66 261 00</a>
+          <span>·</span>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="hover:text-fuchsia-900 transition-colors">Prendre RDV</a>
+        </div>
       </footer>
     </main>
   );
