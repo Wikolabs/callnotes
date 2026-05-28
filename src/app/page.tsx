@@ -7,9 +7,9 @@ export default function Home() {
           CallNotes
         </span>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-white text-sm font-semibold" style={{ background: "#a21caf" }}>
+          <button data-cal-link="wikolabs-team/30min" data-cal-namespace="wk30min" data-cal-config='{"layout":"month_view"}' type="button" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-white text-sm font-semibold" style={{ background: "#a21caf" }}>
             📅 Réserver un créneau →
-          </a>
+          </button>
           <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20CallNotes%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-white text-sm font-semibold" style={{ background: "#25d366", borderColor: "#25d366" }}>
             💬 WhatsApp →
           </a>
@@ -28,9 +28,9 @@ export default function Home() {
           CallNotes transcrit vos appels, en extrait les informations BANT, génère un résumé structuré et synchronise tout dans votre CRM — sans lever le petit doigt.
         </p>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl text-white font-bold text-lg shadow-lg" style={{ background: "linear-gradient(135deg, #a21caf, #7c3aed)" }}>
+          <button data-cal-link="wikolabs-team/30min" data-cal-namespace="wk30min" data-cal-config='{"layout":"month_view"}' type="button" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl text-white font-bold text-lg shadow-lg" style={{ background: "linear-gradient(135deg, #a21caf, #7c3aed)" }}>
             📅 Réserver un créneau →
-          </a>
+          </button>
           <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20CallNotes%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl text-white font-bold text-lg shadow-lg" style={{ background: "#25d366", borderColor: "#25d366" }}>
             💬 WhatsApp →
           </a>
@@ -119,9 +119,9 @@ export default function Home() {
         </h2>
         <p className="text-fuchsia-200 mb-8">Démo en 20 min. Opérationnel en 24h.</p>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl font-bold text-lg shadow-lg" style={{ background: "white", color: "#a21caf" }}>
+          <button data-cal-link="wikolabs-team/30min" data-cal-namespace="wk30min" data-cal-config='{"layout":"month_view"}' type="button" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl font-bold text-lg shadow-lg" style={{ background: "white", color: "#a21caf" }}>
             📅 Réserver un créneau →
-          </a>
+          </button>
           <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20CallNotes%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-xl font-bold text-lg shadow-lg" style={{ background: "#25d366", borderColor: "#25d366" }}>
             💬 WhatsApp →
           </a>
