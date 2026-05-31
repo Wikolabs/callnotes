@@ -1,10 +1,11 @@
 version: "3.9"
 
-# CallNotes demo — production-ready POC.
+# callnotes demo - production-ready POC.
 # 2 services orchestrated:
 #   - callnotes (Next.js frontend on host port 3011)
 #   - callnotes-backend (FastAPI Python, internal only on 8000)
-# Internal network so the frontend can reach the backend by service name.
+# Shared external network wkdemo-net (created once by deploy.yml) avoids
+# Docker default address-pool exhaustion across all 47 LP stacks.
 
 services:
   callnotes-backend:
@@ -15,10 +16,22 @@ services:
       GROQ_API_KEY: ${GROQ_API_KEY:-}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
     networks:
+      - wkdemo_net
+
+  callnotes:
+    image: ghcr.io/wikolabs/callnotes:latest
+    container_name: callnotes
+    restart: unless-stopped
+    ports:
+      - "3011:3000"
+    environment:
+      BACKEND_URL: "http://callnotes-backend:8000"
+    depends_on:
+      - callnotes-backend
+    networks:
+      - wkdemo_net
+
+networks:
   wkdemo_net:
     name: wkdemo-net
     external: true
-networks:
-  callnotes-net:
-    name: callnotes-net
-    driver: bridge
